@@ -38,9 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 // set Activity
                 Intent intent = new Intent(MainActivity.this, StreamActivity.class);
                 // save the onClick channel
-                String message = nameArray[position];
+                String message1 = nameArray[position];
+                String message2 = Integer.toString(position);
                 // transfer the saved
-                intent.putExtra("bleh", message);
+                intent.putExtra("bleh1", message1);
+                intent.putExtra("bleh2", message2);
                 // switch Activity
                 startActivity(intent);
             }

@@ -9,20 +9,23 @@ import android.widget.VideoView;
 
 public class StreamActivity extends AppCompatActivity {
 
+    String[] streamArray = { "link_1" , "link_2" };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stream);
 
         // extract
-        String savedExtra = getIntent().getStringExtra("bleh");
+        String savedExtra1 = getIntent().getStringExtra("bleh1");
+        String savedExtra2 = getIntent().getStringExtra("bleh2");
 
         // debug
         TextView myText = (TextView) findViewById(R.id.textID);
-        myText.setText(savedExtra);
+        myText.setText(savedExtra1);
 
         // set video path
-        String video_url = "rtsp://r5---sn-npoeen7r.googlevideo.com/Cj0LENy73wIaNAkLtUwKlqNOUxMYDSANFC0nColcMOCoAUIASARgkIrYzOPrr61bigELRXY3TDJSUHBPRjAM/C7859A1EDF3C12D192FA5F2B15FCC221137C2F49.8C874E07C4F1025C94BF1C9674B7517F3A583B9E/yt6/1/video.3gp";
+        String video_url = streamArray[Integer.parseInt(savedExtra2)];
 
         VideoView videoView = findViewById(R.id.video_view);
         //String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video;
