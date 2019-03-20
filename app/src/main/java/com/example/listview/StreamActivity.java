@@ -11,7 +11,12 @@ public class StreamActivity extends AppCompatActivity {
 
     String[] streamArray = {
             "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong1HD.smil/playlist.m3u8",
+<<<<<<< HEAD
             "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong2HD.smil/playlist.m3u8" };
+=======
+            "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong2HD.smil/playlist.m3u8"
+    };
+>>>>>>> a57233aaf0aa53ce789656fbee46e573825e6514
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
