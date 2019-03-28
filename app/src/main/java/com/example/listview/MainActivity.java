@@ -10,8 +10,8 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] nameArray = { "channel 1" , "channel 2"};
-    String[] infoArray = { "Vinh Long 1" , "Vinh Long 2" };
+    String[] nameArray = { "VTV1", "VTV2", "VTV3", "Vinh Long 1" , "Vinh Long 2" };
+    //String[] infoArray = { "VTV1", "VTV2", "VTV3", "Vinh Long 1" , "Vinh Long 2" };
 
 
     @Override
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         // List View
         // call the class
-        CustomAdapter customAdapter = new CustomAdapter(this, nameArray, infoArray);
+        CustomAdapter customAdapter = new CustomAdapter(this, nameArray);
         // change the view
         ListView listView = findViewById(R.id.listViewId);
         listView.setAdapter(customAdapter);
