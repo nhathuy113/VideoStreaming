@@ -10,16 +10,12 @@ import android.widget.VideoView;
 public class StreamActivity extends AppCompatActivity {
 
     String[] streamArray = {
-            "http://liverestreamobj.5b1df984.cdnviet.com/hls/VTV1_HD/03.m3u8",
-            "http://liverestreamobj.5b1df984.cdnviet.com/hls/VTV2_HD/03.m3u8",
-            "http://liverestreamobj.5b1df984.cdnviet.com/hls/VTV3_HD/03.m3u8",
+            "http://live.cdn.mobifonetv.vn/motv/myhtv1_hls.smil/chunklist_b1200000.m3u8",
+            "http://live.cdn.mobifonetv.vn/motv/myhtv2_hls.smil/chunklist_b1200000.m3u8",
+            "http://live.cdn.mobifonetv.vn/motv/myhtv3_hls.smil/chunklist_b1200000.m3u8",
             "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong1HD.smil/playlist.m3u8",
-<<<<<<< HEAD
-            "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong2HD.smil/playlist.m3u8" };
-=======
             "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong2HD.smil/playlist.m3u8"
     };
->>>>>>> a57233aaf0aa53ce789656fbee46e573825e6514
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

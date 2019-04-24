@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] nameArray = { "VTV1", "VTV2", "VTV3", "Vinh Long 1" , "Vinh Long 2" };
+    String[] nameArray = { "HTV1", "HTV2", "HTV3", "Vinh Long 1" , "Vinh Long 2" };
     //String[] infoArray = { "VTV1", "VTV2", "VTV3", "Vinh Long 1" , "Vinh Long 2" };
 
 
