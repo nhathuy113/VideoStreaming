@@ -16,16 +16,12 @@ public class CustomAdapter extends ArrayAdapter {
     //to store the list of
     private final String[] nameArray;
 
-    //to store the list of
-    private final String[] infoArray;
-
     // Constructor
-    public CustomAdapter(Activity context, String[] nameArrayParam, String[] infoArrayParam){
+    public CustomAdapter(Activity context, String[] nameArrayParam ){
         super(context,R.layout.activity_main , nameArrayParam);
 
         this.context=context;
         this.nameArray = nameArrayParam;
-        this.infoArray = infoArrayParam;
     }
 
     // map Properties to View fields
@@ -38,11 +34,9 @@ public class CustomAdapter extends ArrayAdapter {
 
         //this code gets references to objects in the listview_row.xml file
         TextView nameTextField = (TextView) rowView.findViewById(R.id.nameTextViewID);
-        TextView infoTextField = (TextView) rowView.findViewById(R.id.infoTextViewID);
 
         //this code sets the values of the objects to values from the arrays
         nameTextField.setText(nameArray[position]);
-        infoTextField.setText(infoArray[position]);
 
         return rowView;
     };
